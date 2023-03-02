@@ -3,7 +3,7 @@ package overall.credit;
 import java.util.*;
 import java.util.logging.*;
 
-public class Credit implements Cloneable {
+public class Credit implements cloneable {
         private String name;
         private String no;
         private String expdate;
@@ -22,7 +22,7 @@ public class Credit implements Cloneable {
         }
 
         public Object cloning() throws CloneNotSupportedException {
-                return super.clone();
+                return super.cloning();
         }
 
         public static void run() throws CloneNotSupportedException {
