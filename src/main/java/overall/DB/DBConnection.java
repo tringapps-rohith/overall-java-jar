@@ -28,7 +28,7 @@ public class DBConnection {
 	Statement st;
 	ResultSet rs;
 
-	void connect() {
+	void connectConn() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(hostAdd, username, password);
@@ -45,7 +45,7 @@ public class DBConnection {
 		}
 	}
 
-	void Close() {
+	void closeConn() {
 		try {
 
 			rs.close();
@@ -76,10 +76,10 @@ public class DBConnection {
 			switch (ch) {
 				case 1:
 
-					d.connect();
+					d.connectConn();
 					break;
 				case 2:
-					d.Close();
+					d.closeConn();
 					break;
 				default:
 					l.info("Enter correct choice\n");
