@@ -19,7 +19,7 @@ public class XO {
 	void display(String[][] a) {
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				l.info(a[i][j] + " ");
+				l.log(Level.INFO,()-> a[i][j] + " ");
 			}
 			l.info("\n");
 		}
