@@ -4,6 +4,9 @@ import java.util.*;
 import java.util.logging.*;
 
 public class CalcTest {
+         private CalcTest() {
+    throw new IllegalStateException("calctest class");
+  }
         public static void run() {
                 Logger l = Logger.getLogger("com.api.jar");
 
