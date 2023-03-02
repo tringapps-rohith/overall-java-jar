@@ -62,31 +62,23 @@ public class Bank {
                                         case 2:
                                                 l.info("Enter the amount to be deposit\n");
                                                 amount = sin.nextDouble();
-                                                if (amount < 100) {
-
-                                                        l.info("Minimum deposit is Rs.100. So, your deposit failed");
-                                                } else {
+                                                
                                                         b.deposit(amount);
                                                         res = b.balance();
                                                         l.log(Level.INFO, () -> "Your total amount is... " + res);
-                                                }
+                                                
                                                 break;
                                         case 3:
                                                 l.info("Enter the amount to be withdrawl\n");
                                                 amount = sin.nextDouble();
-                                                try {
-                                                        if (b.balance() > amount && amount > 100) {
-
+                                           
+                                                        
                                                                 b.withDraw(amount);
                                                                 l.log(Level.INFO, () -> "Your current balance is... "
                                                                                 + b.balance());
-                                                        } else {
-                                                                l.info("Amount cant be withdrawl");
+                                                        
 
-                                                        }
-                                                } catch (InputMismatchException e) {
-                                                        l.log(Level.INFO, () -> "Error occur: " + e);
-                                                }
+                                                        
 
                                                 break;
                                         case 4:
