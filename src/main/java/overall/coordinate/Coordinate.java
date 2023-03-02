@@ -3,7 +3,7 @@ package overall.coordinate;
 import java.util.*;
 import java.util.logging.*;
 
-public class Coordinate implements Cloneable {
+public class Coordinate implements cloneable {
         private String x;
         private String y;
 
@@ -20,7 +20,7 @@ public class Coordinate implements Cloneable {
         }
 
         public Object cloning() throws CloneNotSupportedException {
-                return super.clone();
+                return super.cloneable();
         }
 
         public static void run() throws CloneNotSupportedException {
