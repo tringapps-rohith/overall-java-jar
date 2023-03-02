@@ -49,6 +49,9 @@ class StudentGPA {
 }
 
 public class StudentTest {
+        private StudentTest{
+                throws new IllegalStateException("Utility class");
+        }
         public static void run() {
                 Scanner sin = new Scanner(System.in);
                 Logger l = Logger.getLogger("com.api.jar");
