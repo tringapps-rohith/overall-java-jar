@@ -1,7 +1,6 @@
 package overall.student;
 
 import java.util.*;
-import java.util.logging.Logger;
 import java.util.logging.*;
 
 public class Student {
