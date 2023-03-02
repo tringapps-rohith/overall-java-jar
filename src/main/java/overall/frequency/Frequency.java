@@ -29,7 +29,7 @@ public class Frequency {
 		}
 		while (!queue.isEmpty()) {
 
-			System.out.print(queue.poll());
+			l.info(queue.poll());
 		}
 
 	}
