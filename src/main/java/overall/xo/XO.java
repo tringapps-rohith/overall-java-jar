@@ -19,9 +19,9 @@ public class XO {
 	void display(String[][] a) {
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				System.out.print(a[i][j] + " ");
+				l.info(a[i][j] + " ");
 			}
-			System.out.println();
+			l.info("\n");
 		}
 	}
 
@@ -92,7 +92,7 @@ public class XO {
 		x.display(a);
 		int count = 0;
 		int stop = 1;
-		while (true) {
+		while (stop==1) {
 			l.info("User 1:Enter the position(1-9)\n");
 
 			int u1 = sin.nextInt();
@@ -110,13 +110,15 @@ public class XO {
 
 				x.display(a);
 				l.info("Player 1 wins\n");
-				break;
+				stop=0;
 			} else if (count == 9 && stop == 1) {
 
 				x.display(a);
 				l.info("Draw");
-				break;
+				stop=0;
 			}
+			if(stop!=0)
+			{
 			l.info("User 2:Enter the position\n");
 			int u2 = sin.nextInt();
 
@@ -133,9 +135,10 @@ public class XO {
 			if (diares2 == 1 || hrres2 == 1 || vres2 == 1 && stop == 1) {
 				x.display(a);
 				l.info("Player 2 wins\n");
-				break;
+				stop=0;
 			}
 			x.display(a);
+			}
 		}
 	}
 }
