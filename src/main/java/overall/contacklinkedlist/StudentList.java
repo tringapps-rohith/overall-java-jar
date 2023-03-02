@@ -138,7 +138,7 @@ public class StudentList {
                 StudentList sl = new StudentList();
 
                 Node newNode;
-                int res;
+               
                 int pos;
                 l.info("\nEnter student details\n");
                 int ch;
