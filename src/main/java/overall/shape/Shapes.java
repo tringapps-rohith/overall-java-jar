@@ -7,7 +7,10 @@ public class Shapes {
         /**
          * 
          */
-
+        public void display()
+        {
+                return "Shapes class";
+        }
         public static void run() {
                 int ch = 5;
                 Scanner sin = new Scanner(System.in);
