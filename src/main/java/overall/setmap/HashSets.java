@@ -8,7 +8,8 @@ import java.util.*;
 import java.util.logging.*;
 public class HashSets
 {
-        public static void run()
+	
+        public  void run()
         {
 				Logger l=Logger.getLogger("com.api.jar");
                 Scanner sin=new Scanner(System.in);
