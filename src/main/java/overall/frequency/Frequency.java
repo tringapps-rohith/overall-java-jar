@@ -34,14 +34,19 @@ public class Frequency {
 
 	}
 
-	public static void run() throws Exception {
+	public static void run()  {
 		Logger l = Logger.getLogger("com.api.jar");
+		try{
 		String f = "C:\\Users\\Tringapps-user3\\Documents\\java\\file.txt";
 		Scanner sc = new Scanner(new File(f));
 		String str = sc.nextLine();
 		l.info(str);
 		Frequency fre = new Frequency();
 		fre.countFrequency(str);
-
+		}
+		catch(FileNotFoundException e)
+		{
+			l.info(e);
+		}
 	}
 }
